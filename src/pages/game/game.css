@@ -18,7 +18,7 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.2em;
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   padding: 30px;
   margin: 0 0 30px;
   border-radius: 5px;
@@ -29,7 +29,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   width: 100%;
-  max-width: 800px;
+  max-width: 550px;
   margin: 0 auto;
 }
 
@@ -54,12 +54,11 @@ header {
 }
 
 .front {
-  background-image: url("../images/i4.png");
   transform: rotateY(180deg);
 }
 
 .back {
-  background-image: url("../images/Rick\ and\ Morty\ versos.jpg");
+  background-image: url("../../assets/image/cards/verso-card-03.png");
   background-size: cover;
   background-position: center;
   backface-visibility: hidden;
@@ -69,7 +68,7 @@ header {
   transform: rotateY(180deg);
 }
 
-.desabled-card {
+.disabled-card {
   filter: saturate(0);
-  opacity: 0.5;
+  opacity: 0.95;
 }
