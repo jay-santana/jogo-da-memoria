@@ -12,15 +12,29 @@
   <body>
     <main>
       <header>
-        <span class="player">Jogador: Maria Clara</span>
-        <span>Tempo: <span class="timer">00</span></span>
-        <span>Movimentos: <span class="move-counter">00</span></span>
+        <span>Jogador: <span class="player"></span></span>
+        <span>Tempo: <span class="timer"></span></span>
+        <span>Tentativas: <span class="attempts">0</span></span>
+        <span>Acertos: <span class="matches">0</span></span>
       </header>
       <div class="grid">
         <!-- <div class="card">
           <div class="face front"></div>
           <div class="face back"></div>
         </div> -->
+      </div>
+      <div class="modal" id="endGameModal">
+        <div class="modal-content">
+          <h2>Parabéns, <span id="modalPlayer"></span>!</h2>
+          <p>Seu tempo foi de: <span id="modalTime"></span> segundos</p>
+          <p>Tentativas: <span id="modalAttempts"></span></p>
+          <p>Acertos: <span id="modalMatches"></span></p>
+          <div class="modal-buttons">
+            <button id="playAgainBtn">Jogar Novamente</button>
+            <button id="backToHomeBtn">Voltar ao Início</button>
+            <button id="nextLevelBtn" style="display: none;">Próximo Nível</button>
+          </div>
+        </div>
       </div>
     </main>
   </body>
