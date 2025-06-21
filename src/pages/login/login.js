@@ -16,7 +16,7 @@ const validateInput = ({ target }) => {
 const handleSubmit = (event) => {
   event.preventDefault();
   localStorage.setItem("player", input.value);
-  window.location = "../level/select-level.html";
+  window.location = "./src/pages/level/select-level.html";
 };
 
 // === Eventos ===

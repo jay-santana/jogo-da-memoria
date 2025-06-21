@@ -186,7 +186,7 @@ const setupUIButtons = () => {
   document.getElementById("playAgainBtn").addEventListener("click", () => location.reload());
 
   document.getElementById("backToHomeBtn").addEventListener("click", () => {
-    window.location.href = "../login/login.html";
+    window.location.href = "/index.html";
   });
 
   document.getElementById("nextLevelBtn").addEventListener("click", () => {
