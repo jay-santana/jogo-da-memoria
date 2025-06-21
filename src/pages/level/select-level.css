@@ -1,9 +1,12 @@
 body {
+  background-image: url("/src/assets/image/level/bg-level.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #0d0d0d;
   color: white;
   font-family: sans-serif;
 }
@@ -13,12 +16,12 @@ body {
 }
 
 .buttons button {
-  padding: 15px 30px;
-  margin: 10px;
+  padding: 10px 35px;
+  margin: 8px;
   font-size: 1.2em;
   cursor: pointer;
-  background-color: #39813a;
-  color: white;
+  background-color: #4ab16e;
+  color: #000;
   border: none;
   border-radius: 8px;
 }

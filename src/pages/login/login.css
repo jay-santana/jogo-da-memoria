@@ -1,6 +1,5 @@
 body {
-  background: #ffffff url("/src/assets/image/login/bg-login.png") no-repeat right top
-    fixed;
+  background: #fff url("/src/assets/image/login/bg-login.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -19,7 +18,8 @@ body {
 }
 
 .card {
-  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* background-color: rgba(255, 255, 255, 0.089); */
+  background-color: rgba(27, 68, 49, 0.199);
   border-radius: 16px;
   padding: 30px 40px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -52,15 +52,19 @@ body {
 }
 
 .login-input {
-  border: 2px solid #d4d0d0;
   border-radius: 8px;
-  color: #757575;
+  color: #000;
   font-size: 1em;
   margin-bottom: 8px;
   max-width: 300px;
   outline: none;
   padding: 15px;
   width: 100%;
+}
+
+.login-input::placeholder {
+  color: #757575;
+  font-size: 1em;
 }
 
 .login-button {
