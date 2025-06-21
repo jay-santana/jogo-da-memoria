@@ -17,10 +17,24 @@ let gridMatrix = [];
 
 // === Lista de personagens ===
 const allCharacters = [
-  "arthricia", "beth-smith", "cornvelious-daniel", "flansian", "jerry-smith",
-  "jessica", "morty", "mr-goldenfold", "mr-meeseeks", "mr-poopybutthole",
-  "pessoa-passaro", "prince-nebulon", "rick-sanchez", "scroopy",
-  "snuffles", "squanchy", "summer", "tammy"
+  "arthricia",
+  "beth-smith",
+  "cornvelious-daniel",
+  "flansian",
+  "jerry-smith",
+  "jessica",
+  "morty",
+  "mr-goldenfold",
+  "mr-meeseeks",
+  "mr-poopybutthole",
+  "pessoa-passaro",
+  "prince-nebulon",
+  "rick-sanchez",
+  "scroopy",
+  "snuffles",
+  "squanchy",
+  "summer",
+  "tammy",
 ];
 
 // === Define o nível e personagens ===
@@ -61,7 +75,7 @@ const generateGridMatrix = () => {
   const layout = {
     facil: { rows: 2, cols: 3 },
     medio: { rows: 3, cols: 4 },
-    dificil: { rows: 3, cols: 6 }
+    dificil: { rows: 3, cols: 6 },
   };
 
   const { rows, cols } = layout[level];
@@ -183,7 +197,9 @@ const showEndGameModal = () => {
 
 // === Botões da interface ===
 const setupUIButtons = () => {
-  document.getElementById("playAgainBtn").addEventListener("click", () => location.reload());
+  document
+    .getElementById("playAgainBtn")
+    .addEventListener("click", () => location.reload());
 
   document.getElementById("backToHomeBtn").addEventListener("click", () => {
     window.location.href = "/index.html";
@@ -191,8 +207,12 @@ const setupUIButtons = () => {
 
   document.getElementById("nextLevelBtn").addEventListener("click", () => {
     const currentLevel = localStorage.getItem("level");
-    const nextLevel = currentLevel === "facil" ? "medio" :
-                      currentLevel === "medio" ? "dificil" : null;
+    const nextLevel =
+      currentLevel === "facil"
+        ? "medio"
+        : currentLevel === "medio"
+        ? "dificil"
+        : null;
 
     if (nextLevel) {
       localStorage.setItem("level", nextLevel);

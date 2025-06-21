@@ -13,7 +13,7 @@ main {
 /* === Cabeçalho === */
 header {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.747);
@@ -27,7 +27,7 @@ header {
 
 /* === Grid geral e níveis === */
 .grid {
-   display: grid;
+  display: grid;
   gap: 15px;
   width: 100%;
   margin: 0 auto;
@@ -118,7 +118,7 @@ header {
 
 .modal-buttons {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   gap: 5px;
   margin-top: 40px;
 }

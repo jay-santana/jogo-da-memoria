@@ -1,14 +1,17 @@
-# 🧠 Jogo da Memória — *Rick and Morty Edition*
+# 🧠 Jogo da Memória — _Rick and Morty Edition_
 
 ## 1. Prefácio
+
 Este projeto foi desenvolvido como parte da disciplina de Algoritmos e Programação, com o objetivo de praticar estruturas condicionais, de repetição, manipulação de arrays (matrizes) e lógica de programação, foram utilizandos JavaScript e conceitos fundamentais da construção de interfaces web.
 
 ---
 
 ## 2. Resumo do Projeto
-Este é um jogo da memória temático inspirado na série **Rick and Morty**, em que o jogador deve encontrar pares de cartas com personagens do universo da animação. O jogador revela as cartas ao clicar nelas e deve memorizar suas posições para encontrar os pares com o menor número de tentativas possível. 
+
+Este é um jogo da memória temático inspirado na série **Rick and Morty**, em que o jogador deve encontrar pares de cartas com personagens do universo da animação. O jogador revela as cartas ao clicar nelas e deve memorizar suas posições para encontrar os pares com o menor número de tentativas possível.
 
 Além do funcionamento básico, o jogo possui:
+
 - Interface visual estilizada com elementos de Rick and Morty;
 - Níveis de dificuldade com diferentes quantidades de cartas;
 - Cronômetro em tempo real;
@@ -45,8 +48,8 @@ Além do funcionamento básico, o jogo possui:
   - HTML5
   - CSS3
   - JavaScript (sem bibliotecas externas)
-  
 - **Lógica Principal**:
+
   - Uso de matrizes para organizar as cartas.
   - Manipulação do DOM para revelar e esconder cartas.
   - Contagem de tentativas e acertos em tempo real.
@@ -57,7 +60,7 @@ Além do funcionamento básico, o jogo possui:
   /src
    ├── assets/
    │   └── image/
-   |     └── [...imagens de personagens Rick and Morty...] 
+   |     └── [...imagens de personagens Rick and Morty...]
    ├── game/
    │   ├── game.html
    │   ├── game.js
