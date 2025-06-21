@@ -1,4 +1,4 @@
-# 🧠 Jogo da Memória
+# 🧠 Jogo da Memória — *Rick and Morty Edition*
 
 ## 1. Prefácio
 Este projeto foi desenvolvido como parte da disciplina de Algoritmos e Programação, com o objetivo de praticar estruturas condicionais, de repetição, manipulação de arrays (matrizes) e lógica de programação, foram utilizandos JavaScript e conceitos fundamentais da construção de interfaces web.
@@ -6,11 +6,11 @@ Este projeto foi desenvolvido como parte da disciplina de Algoritmos e Programa�
 ---
 
 ## 2. Resumo do Projeto
-O jogo da memória desafia o jogador a encontrar pares de cartas iguais escondidas em um tabuleiro. O jogador revela as cartas ao clicar nelas e deve memorizar suas posições para encontrar os pares com o menor número de tentativas possível. 
+Este é um jogo da memória temático inspirado na série **Rick and Morty**, em que o jogador deve encontrar pares de cartas com personagens do universo da animação. O jogador revela as cartas ao clicar nelas e deve memorizar suas posições para encontrar os pares com o menor número de tentativas possível. 
 
 Além do funcionamento básico, o jogo possui:
-- Interface visual;
-- Níveis de dificuldade;
+- Interface visual estilizada com elementos de Rick and Morty;
+- Níveis de dificuldade com diferentes quantidades de cartas;
 - Cronômetro em tempo real;
 - Contadores de tentativas e acertos.
 
@@ -18,8 +18,10 @@ Além do funcionamento básico, o jogo possui:
 
 ## 3. Demonstração de Uso
 
+![Demo do Jogo da Memória Rick and Morty](src/assets/image/demo.gif)
+
 1. O jogador insere o nome e seleciona o nível de dificuldade (Fácil, Médio ou Difícil).
-2. O jogo é iniciado com cartas embaralhadas, dispostas de acordo com o nível.
+2. O jogo é iniciado com cartas embaralhadas, contendo **personagens de Rick and Morty**, dispostas de acordo com o nível escolhido.
 3. Ao clicar nas cartas, elas são reveladas:
    - Se forem iguais: permanecem visíveis;
    - Se forem diferentes: são escondidas novamente após 0.5 segundos.
@@ -54,18 +56,23 @@ Além do funcionamento básico, o jogo possui:
   ```
   /src
    ├── assets/
-   │   └── image/      # Imagens de cartas e fundos
+   │   └── image/
+   |     └── [...imagens de personagens Rick and Morty...] 
    ├── game/
    │   ├── game.html
    │   ├── game.js
    │   └── game.css
    ├── login/
-   │   └── login.html
+   │   ├── login.js
+   |   └── login.css
    ├── select-level/
    │   ├── select-level.html
-   │   └── select-level.js
-   └── reset/
-       └── reset.css
+   │   ├── select-level.js
+   |   └── select-level.css
+   ├── reset/
+   |   └── reset.css
+   ├── index.html
+   └── README.md
   ```
 
 ---
