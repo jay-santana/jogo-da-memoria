@@ -13,6 +13,7 @@ let matches = 0;
 let characters = [];
 let timer = 0;
 let intervalId = null;
+let gridMatrix = []; // <== Agora usamos matriz
 
 // === Lista de personagens ===
 const allCharacters = [
@@ -22,7 +23,7 @@ const allCharacters = [
   "snuffles", "squanchy", "summer", "tammy"
 ];
 
-// === Níveis do jogo ===
+// === Define o nível e personagens ===
 const setLevel = () => {
   const level = localStorage.getItem("level") || "facil";
   const levels = { facil: 3, medio: 6, dificil: 9 };
@@ -30,7 +31,7 @@ const setLevel = () => {
   grid.classList.add(level);
 };
 
-// === Criação dos elementos HTML das cartas ===
+// === Criação de elementos HTML das cartas ===
 const createElement = (tag, className) => {
   const element = document.createElement(tag);
   element.className = className;
@@ -38,7 +39,7 @@ const createElement = (tag, className) => {
 };
 
 // === Criação da carta ===
-const createCard = (character) => {
+const createCard = (character, rowIndex, colIndex) => {
   const card = createElement("div", "card");
   const front = createElement("div", "face front");
   const back = createElement("div", "face back");
@@ -47,9 +48,35 @@ const createCard = (character) => {
 
   card.append(front, back);
   card.setAttribute("data-character", character);
+  card.setAttribute("data-row", rowIndex);
+  card.setAttribute("data-col", colIndex);
   card.addEventListener("click", handleCardClick);
 
   return card;
+};
+
+// === Gera matriz embaralhada de cartas ===
+const generateGridMatrix = () => {
+  const level = localStorage.getItem("level") || "facil";
+  const layout = {
+    facil: { rows: 2, cols: 3 },
+    medio: { rows: 3, cols: 4 },
+    dificil: { rows: 3, cols: 6 }
+  };
+
+  const { rows, cols } = layout[level];
+  const cards = [...characters, ...characters].sort(() => Math.random() - 0.5);
+  const matrix = [];
+
+  for (let i = 0; i < rows; i++) {
+    const row = [];
+    for (let j = 0; j < cols; j++) {
+      row.push(cards[i * cols + j]);
+    }
+    matrix.push(row);
+  }
+
+  return matrix;
 };
 
 // === Revela carta clicada ===
@@ -109,12 +136,15 @@ const resetSelection = () => {
   secondCard = null;
 };
 
-// === Carrega cartas no tabuleiro ===
+// === Carrega cartas no tabuleiro com matriz ===
 const loadGame = () => {
-  const cards = [...characters, ...characters].sort(() => Math.random() - 0.5);
-  cards.forEach((character) => {
-    const card = createCard(character);
-    grid.appendChild(card);
+  gridMatrix = generateGridMatrix();
+
+  gridMatrix.forEach((row, rowIndex) => {
+    row.forEach((character, colIndex) => {
+      const card = createCard(character, rowIndex, colIndex);
+      grid.appendChild(card);
+    });
   });
 };
 
