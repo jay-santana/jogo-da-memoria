@@ -1,3 +1,4 @@
+/* === Estilo geral da página === */
 body {
   background: #fff url("/src/assets/image/login/bg-login.png");
   background-size: cover;
@@ -9,6 +10,7 @@ body {
   align-items: center;
 }
 
+/* === Layout principal do formulário === */
 .login-form {
   align-items: center;
   display: flex;
@@ -17,8 +19,8 @@ body {
   justify-content: center;
 }
 
+/* === Estilo do cartão de login === */
 .card {
-  /* background-color: rgba(255, 255, 255, 0.089); */
   background-color: rgba(27, 68, 49, 0.199);
   border-radius: 16px;
   padding: 30px 40px;
@@ -31,6 +33,7 @@ body {
   max-width: 500px;
 }
 
+/* === Cabeçalho do formulário === */
 .login-header {
   align-items: center;
   display: flex;
@@ -51,6 +54,7 @@ body {
   text-align: center;
 }
 
+/* === Estilo do campo de entrada === */
 .login-input {
   border-radius: 8px;
   color: #000;
@@ -62,11 +66,13 @@ body {
   width: 100%;
 }
 
+/* === Estilo do placeholder === */
 .login-input::placeholder {
   color: #757575;
   font-size: 1em;
 }
 
+/* === Botão de login === */
 .login-button {
   background-color: rgb(84, 8, 155);
   padding: 15px;
@@ -78,6 +84,7 @@ body {
   max-width: 300px;
 }
 
+/* === Estado desativado do botão === */
 .login-button:disabled {
   background-color: #b6b4b4;
   color: #d4d4d4;
