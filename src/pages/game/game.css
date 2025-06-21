@@ -1,16 +1,16 @@
+/* === Estrutura principal === */
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background-image: url("/src/assets/image/game/bg-game.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 100vh;
   padding: 20px 20px 50px;
+  background: url("/src/assets/image/game/bg-game.png") center/cover no-repeat;
 }
 
+/* === Cabeçalho === */
 header {
   display: flex;
   align-items: center;
@@ -18,10 +18,17 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.2em;
   width: 100%;
-  max-width: 100%;
   padding: 30px;
-  margin: 0 0 30px;
+  margin-bottom: 30px;
   border-radius: 5px;
+}
+
+/* === Grid geral e níveis === */
+.grid {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .grid.facil {
@@ -48,32 +55,25 @@ header {
   transform: scale(1.05);
 }
 
-
-.grid {
-  display: grid;
-  gap: 15px;
-  width: 100%;
-  margin: 0 auto;
-}
-
+/* === Cartas === */
 .card {
-  aspect-ratio: 3/4;
   width: 100%;
+  aspect-ratio: 3/4;
+  background-color: #ccc;
   border-radius: 5px;
   position: relative;
   transition: all 400ms ease;
   transform-style: preserve-3d;
-  background-color: #ccc;
 }
 
 .face {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
   border: 2px solid #39813a;
   border-radius: 5px;
+  background-size: cover;
+  background-position: center;
   transition: all 400ms ease;
 }
 
@@ -83,11 +83,10 @@ header {
 
 .back {
   background-image: url("../../assets/image/cards/verso-card-03.png");
-  background-size: cover;
-  background-position: center;
   backface-visibility: hidden;
 }
 
+/* === Estados de jogo === */
 .reveal-card {
   transform: rotateY(180deg);
 }
@@ -97,26 +96,27 @@ header {
   opacity: 0.5;
 }
 
+/* === Modal === */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-  background-color: #fff;
+  background: #fff;
   padding: 30px;
-  border-radius: 10px;
   text-align: center;
-  max-width: 400px;
+  border-radius: 10px;
   width: 90%;
+  max-width: 400px;
 }
 
 .modal-buttons {
@@ -129,9 +129,9 @@ header {
   padding: 10px 20px;
   font-size: 1em;
   border: none;
+  border-radius: 5px;
   background-color: #39813a;
   color: white;
-  border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
