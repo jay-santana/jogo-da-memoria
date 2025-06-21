@@ -13,7 +13,7 @@ let matches = 0;
 let characters = [];
 let timer = 0;
 let intervalId = null;
-let gridMatrix = []; // <== Agora usamos matriz
+let gridMatrix = [];
 
 // === Lista de personagens ===
 const allCharacters = [
