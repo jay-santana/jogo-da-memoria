@@ -21,7 +21,7 @@ Além do funcionamento básico, o jogo possui:
 
 ## 3. Demonstração de Uso
 
-![Demo do Jogo da Memória Rick and Morty](src/assets/image/demo.gif)
+![Demo do Jogo da Memória Rick and Morty](src/assets/image/jogo-da-memoria-rick-and-morty.gif)
 
 1. O jogador insere o nome e seleciona o nível de dificuldade (Fácil, Médio ou Difícil).
 2. O jogo é iniciado com cartas embaralhadas, contendo **personagens de Rick and Morty**, dispostas de acordo com o nível escolhido.
