@@ -21,7 +21,9 @@ Além do funcionamento básico, o jogo possui:
 
 ## 3. Demonstração de Uso
 
-![Demo do Jogo da Memória Rick and Morty](src/assets/image/jogo-da-memoria-rick-and-morty.gif)
+<p align="center">
+  <img src="src/assets/image/jogo-da-memoria-rick-and-morty.gif" alt="Demo do Jogo da Memória Rick and Morty">
+</p>
 
 1. O jogador insere o nome e seleciona o nível de dificuldade (Fácil, Médio ou Difícil).
 2. O jogo é iniciado com cartas embaralhadas, contendo **personagens de Rick and Morty**, dispostas de acordo com o nível escolhido.
@@ -92,6 +94,6 @@ Além do funcionamento básico, o jogo possui:
 ## 7. Desenvolvedoras
 
 👩‍💻 Jayanny Santana – [[GitHub](https://github.com/jay-santana) / [LinkedIn](https://www.linkedin.com/in/jayanny-santana/)]  
-👩‍💻 Maria Clara de Oliveira – [GitHub / LinkedIn]
+👩‍💻 Maria Clara de Oliveira – [[GitHub](https://github.com/maria-clara27) / [LinkedIn](https://www.linkedin.com/in/maria-clara-sousa-de-oliveira-9623b7211/)]
 
 ---
